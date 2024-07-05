@@ -1,0 +1,2 @@
+JavaScript, Python, Java, Ruby, PHP, C#, Go, Rust, Kotlin, Scala.
+Programming Languages, Databases, Web Servers, API Development, Frameworks and Libraries, Authentication and Authorization, DevOps and Deployment, Version Control, Testing and Debugging, Caching, Security, Monitoring and Logging, Miscellaneous.
