@@ -6,8 +6,8 @@ import (
 
 func main() {
     fmt.Println(groupPalindrome([]string{"katak", "civic", "kasur", "rusak"}))                  
-    fmt.Println(groupPalindrome([]string{"racecar", "seru", "kasur", "civic", "bilik", "kak"})) // [[racecar, civic, kak], seru, kasur, bilik]
-    fmt.Println(groupPalindrome([]string{"masuk", "civic", "hahah", "garam"}))                  // [[civic, hahah], masuk, garam]
+    fmt.Println(groupPalindrome([]string{"racecar", "seru", "kasur", "civic", "bilik", "kak"})) 
+    fmt.Println(groupPalindrome([]string{"masuk", "civic", "hahah", "garam"}))  
 }
 
 func isPalindrome(word string) bool {
