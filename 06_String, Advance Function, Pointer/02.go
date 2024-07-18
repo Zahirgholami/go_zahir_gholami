@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-    fmt.Println(spinString("alta"))    // aalt
-    fmt.Println(spinString("alterra")) // aalrtre
+    fmt.Println(spinString("alta"))
+    fmt.Println(spinString("alterra")) 
     fmt.Println(spinString("sepulsa"))
 }
 
