@@ -9,8 +9,8 @@
             "server": "localhost",
             "port": 3306,
             "driver": "MySQL",
-            "name": "learnDB",
-            "database": "learndb",
+            "name": "mysql",
+            "database": "mysqldb",
             "username": "root",
             "password": ""
         }
