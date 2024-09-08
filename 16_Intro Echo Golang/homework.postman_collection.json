@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "a15b0b72-4497-447e-baef-3afcfd5c7d55",
+		"name": "homework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37382889"
+	},
+	"item": [
+		{
+			"name": "Adding New Food Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"unique-id-generated-by-api\",\r\n  \"name\": \"nasi goreng\",\r\n  \"price\": 12000,\r\n  \"description\": \"delicious\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/foods",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"foods"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieving All Food Data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"unique-id-generated-by-api\",\r\n  \"name\": \"nasi goreng\",\r\n  \"price\": 12000,\r\n  \"description\": \"delicious\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/foods",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"foods"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieving Food Data by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/foods/72840dec-7a25-4aa0-b8f6-0e5767aef59b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"foods",
+						"72840dec-7a25-4aa0-b8f6-0e5767aef59b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updating Food Data by ID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ayam goreng\",\"price\":22000,\"description\":\"spicy and delicious\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/foods/72840dec-7a25-4aa0-b8f6-0e5767aef59b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"foods",
+						"72840dec-7a25-4aa0-b8f6-0e5767aef59b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleting Food Data by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"ayam goreng\",\"price\":22000,\"description\":\"spicy and delicious\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/foods/87193c96-61d2-4c47-b900-e8760b7f276a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"foods",
+						"87193c96-61d2-4c47-b900-e8760b7f276a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
