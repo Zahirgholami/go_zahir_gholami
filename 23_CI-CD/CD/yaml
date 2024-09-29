@@ -1,0 +1,30 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set up Go 1.x
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.x
+
+      - name: Install Dependencies
+        run: go mod download
+
+      - name: Build Project
+        run: go build ./...
+
+      # Optional: Add a testing process (extra points)
+      - name: Run Tests
+        run: go test ./... -v
